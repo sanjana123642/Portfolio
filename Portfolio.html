@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanjana | Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        background: linear-gradient(135deg, #ffecd2, #fcb69f, #a1c4fd, #c2e9fb);
+        background-size: 300% 300%;
+        animation: bgFlow 12s ease infinite;
+        color: #333;
+    }
+
+    @keyframes bgFlow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-size: 38px;
+        font-weight: 600;
+        color: #4b0082;
+    }
+
+    p {
+        font-size: 16px;
+        color: #444;
+    }
+
+    h2 {
+        margin-top: 35px;
+        font-weight: 500;
+        color: #ff4d6d;
+    }
+
+    img {
+        border-radius: 50%;
+        margin-top: 15px;
+        border: 6px solid #ffffff;
+        background: #fff;
+        padding: 6px;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        box-shadow: 0 12px 30px rgba(0,0,0,0.2);
+    }
+
+    img:hover {
+        transform: rotate(3deg) scale(1.08);
+        box-shadow: 0 18px 40px rgba(0,0,0,0.3);
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    ul li {
+        background: linear-gradient(135deg, #ffffff, #fdf1ff);
+        margin: 12px auto;
+        padding: 15px;
+        width: 350px;
+        border-radius: 16px;
+        color: #5a189a;
+        font-weight: 500;
+        box-shadow: 0 10px 22px rgba(0,0,0,0.15);
+    }
+
+    audio {
+        margin-top: 12px;
+        width: 320px;
+        border-radius: 10px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+
+    form {
+        width: 400px;
+        margin: 35px auto;
+        padding: 25px;
+        background: linear-gradient(135deg, #ffffff, #f0f9ff);
+        border-radius: 18px;
+        box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+        text-align: left;
+    }
+
+    label {
+        font-weight: 500;
+        color: #333;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 11px;
+        margin-top: 6px;
+        margin-bottom: 14px;
+        border-radius: 8px;
+        border: 1px solid #ddd;
+        font-family: 'Poppins', sans-serif;
+        background: #fafafa;
+    }
+
+    input:focus, textarea:focus {
+        outline: none;
+        border-color: #ff758c;
+        box-shadow: 0 0 6px rgba(255,117,140,0.5);
+    }
+
+    input[type="submit"] {
+        background: linear-gradient(90deg, #ff758c, #667eea);
+        color: #fff;
+        border: none;
+        padding: 12px;
+        border-radius: 10px;
+        font-weight: 500;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+</style>
+
+</head>
+
+<body>
+
+    
+
+<audio controls autoplay muted loop>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+</audio>
+
+<br><br>
+
+<video width="300" controls autoplay muted loop>
+    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+
+    <track 
+        src="captions.vtt" 
+        kind="subtitles" 
+        srclang="en" 
+        label="English"
+        default
+    >
+
+    Your browser does not support the video tag.
+</video>
+
+
+    
+
+    <h1>Sanjana Bashya</h1>
+    <p>BTech Student | Aspiring Tech Professional</p>
+
+    <h2>My Profile</h2>
+    <a href="https://www.linkedin.com/in/sanjana-bashya-246a2137b/" target="_blank">
+        <img src="Image.jpeg" alt="Sanjana's Photo" width="200">
+    </a>
+    <p>Click on my photo to visit my LinkedIn profile</p>
+
+    <h2>Education</h2>
+    <ul>
+        <li>AECS-4 School</li>
+        <li> Lokmanya Tilak International School</li>
+        <li>ITM Skills University – BTech</li>
+    </ul>
+
+    <h2>Query Form</h2>
+    <form>
+        <label>Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Query</label>
+        <textarea rows="5" placeholder="Write your query"></textarea>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
