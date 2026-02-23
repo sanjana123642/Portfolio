@@ -58,4 +58,4 @@ The project can be extended using JavaScript or backend technologies
 Author
 
 Sanjana Bashya
-BTech Student
+
